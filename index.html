@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Đình Thi - Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 60px 40px;
+            text-align: center;
+            color: white;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 0 auto 20px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .info-item .label {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .info-item .value {
+            color: #333;
+            font-size: 1.1em;
+            word-break: break-word;
+        }
+
+        .info-item .value a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .info-item .value a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="avatar">👤</div>
+            <h1>Nguyễn Đình Thi</h1>
+            <p>Student | Developer | Competitive Programmer</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Thông Tin Cá Nhân</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="label">📧 Email</div>
+                        <div class="value">ndinhthi2008@gmail.com</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">📱 Điện Thoại</div>
+                        <div class="value">0334145267</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">📍 Địa Chỉ</div>
+                        <div class="value">Pleiku, Gia Lai</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">🎂 Ngày Sinh</div>
+                        <div class="value">28/10/2008</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Liên Kết Cá Nhân</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="label">📘 Facebook</div>
+                        <div class="value">
+                            <a href="https://www.facebook.com/nguyen.inh.thi.121390" target="_blank">facebook.com/nguyen.inh.thi.121390</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">📷 Instagram</div>
+                        <div class="value">
+                            <a href="https://www.instagram.com/nguyendinhthizzz/" target="_blank">@nguyendinhthizzz</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">💻 Codeforces</div>
+                        <div class="value">
+                            <a href="https://codeforces.com/profile/luvher" target="_blank">luvher</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">💻 Codeforces</div>
+                        <div class="value">
+                            <a href="https://codeforces.com/profile/iloveMT" target="_blank">iloveMT</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">🏆 VNOI</div>
+                        <div class="value">
+                            <a href="https://oj.vnoi.info/user/luvher" target="_blank">luvher</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="label">🏆 VNOI</div>
+                        <div class="value">
+                            <a href="https://oj.vnoi.info/user/iloveMT" target="_blank">iloveMT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
